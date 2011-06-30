@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+     @author Christian Hübschi <christian.huebschi@biwac.ch> 
+-->
+<config>
+    <sections>
+        <biwac translate="label">
+                    <label>Biwac Erweiterungen</label>
+                    <tab>Shipping</tab>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>80</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <groups>
+                        <general translate="label">
+                            <label>Additional Package Weight</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <fields>
+                                <addToTablerates translate="label">
+                                    <label>Additonal Weight for Tablerates</label>
+                                    <frontend_type>text</frontend_type>
+                                    <sort_order>1</sort_order>
+                                    <show_in_default>1</show_in_default>
+                                    <show_in_website>1</show_in_website>
+                                    <show_in_store>1</show_in_store>
+                                    <comment></comment>
+                                </addToTablerates>
+                            </fields>
+                        </general>
+                    </groups>
+
+        </biwac>
+    </sections>
+</config>

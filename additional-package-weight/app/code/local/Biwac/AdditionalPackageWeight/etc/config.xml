@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+     @author Christian Hübschi <christian.huebschi@biwac.ch> 
+-->
+<config>
+    <modules>
+        <Biwac_AdditionalPackageWeight>
+            <version>0.1.0</version>
+        </Biwac_AdditionalPackageWeight>
+    </modules>
+    <global>
+        <models>
+            <shipping>
+                <rewrite>
+                    <carrier_tablerate>Biwac_AdditionalPackageWeight_Model_Tablerate</carrier_tablerate>
+                </rewrite>
+            </shipping>
+        </models>
+    </global>
+    <adminhtml>
+	<acl>
+	    <resources>
+		<all>
+		    <title>Allow Everything</title>
+		</all>
+		<admin>
+		    <children>
+			<system>
+			    <children>
+				<config>
+				    <children>
+					<biwac>
+					    <title>biwac INFORMATIK GmbH</title>
+					</biwac>
+				    </children>
+				</config>
+			    </children>
+			</system>
+		    </children>
+		</admin>
+	    </resources>
+	</acl>
+    </adminhtml>
+</config>
